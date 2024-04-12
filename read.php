@@ -8,6 +8,7 @@ echo "<th>Full Name</th>";
 echo "<th>Email</th>";
 echo "<th>Age</th>";
 echo "<th>Course</th>";
+echo "<th>Action</th>";
 echo "</tr>";
 
 if(mysqli_query($conn,$query)){
@@ -21,6 +22,8 @@ if(mysqli_query($conn,$query)){
         echo "<td>".$row['email']."</td>";
         echo "<td>".$row['age']."</td>";
         echo "<td>".$row['course']."</td>";
+
+        echo "<td><a href='delete.php?uuid=".$row['id']."'>Delete</a></td>";
         echo "</tr>";
         
     }

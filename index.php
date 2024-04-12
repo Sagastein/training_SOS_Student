@@ -10,6 +10,7 @@
 <main>
     <h1>Registration form</h1>
   <form method="post">
+    <a href="read.php">go live</a>
  <div>
   <label for="fName">Full Name</label>
   <input type="text" name="fName" id="fName" required>
